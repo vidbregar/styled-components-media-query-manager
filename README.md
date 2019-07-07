@@ -6,7 +6,7 @@ Media query manager for styled-components
 
 Design for a desktop (1200px - 1800px) first and then apply media queries for other screen sizes.
 
-### ⚠️ ORDER OF THE MEDIA QUERIES MATTERS!
+### ⚠️ ORDER OF MEDIA QUERIES MATTERS!
 
 PHONE -> TAB_PORT -> TAB_LAND -> DESKTOP_LARGE
 
@@ -25,7 +25,7 @@ const myElement = styled.div`
 
 Design for a phone (0px - 600px) first and then apply media queries for other screen sizes.
 
-### ⚠️ ORDER OF THE MEDIA QUERIES MATTERS!
+### ⚠️ ORDER OF MEDIA QUERIES MATTERS!
 
 DESKTOP_LARGE -> DESKTOP -> TAB_LAND -> TAB_PORT
 
