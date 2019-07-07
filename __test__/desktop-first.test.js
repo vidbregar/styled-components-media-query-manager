@@ -1,5 +1,5 @@
-const mq = require("../desktop-first/mediaQueryManager");
-const { size } = require("../desktop-first/mediaQueryManager");
+const mq = require("../desktop-first");
+const { size } = require("../desktop-first");
 
 describe("mq", () => {
 	it("Should return correct css for PHONE size", () => {
