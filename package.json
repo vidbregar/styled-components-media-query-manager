@@ -1,0 +1,21 @@
+{
+  "name": "styled-components-media-query-manager",
+  "version": "1.0.0",
+  "description": "Media query manager for styled-components",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vidbregar/styled-components-media-query-manager.git"
+  },
+  "author": "Vid Bregar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vidbregar/styled-components-media-query-manager/issues"
+  },
+  "homepage": "https://github.com/vidbregar/styled-components-media-query-manager#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  }
+}
