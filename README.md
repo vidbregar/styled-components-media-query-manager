@@ -16,6 +16,10 @@ Design for a desktop (1200px - 1800px) first and then apply media queries for ot
 
 DESKTOP_LARGE -> TAB_LAND -> TAB_PORT -> PHONE
 
+```js
+import { mqd, DeviceType } from "styled-components-media-query-manager";
+```
+
 ```css
 const myElement = styled.div`
 	color: pink /* design for a DESKTOP size (1200px - 1800px) goes here */
@@ -35,6 +39,10 @@ Design for a phone (0px - 600px) first and then apply media queries for other sc
 ### ⚠️ ORDER OF MEDIA QUERIES MATTERS!
 
 PHONE -> TAB_PORT -> TAB_LAND -> DESKTOP_LARGE
+
+```js
+import { mqm, DeviceType } from "styled-components-media-query-manager";
+```
 
 ```css
 const myElement = styled.div`
