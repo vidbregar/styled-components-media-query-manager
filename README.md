@@ -8,16 +8,17 @@ Design for a desktop (1200px - 1800px) first and then apply media queries for ot
 
 ### ⚠️ ORDER OF MEDIA QUERIES MATTERS!
 
-PHONE -> TAB_PORT -> TAB_LAND -> DESKTOP_LARGE
+DESKTOP_LARGE -> TAB_LAND -> TAB_PORT -> PHONE
 
 ```css
 const myElement = styled.div`
-  color: pink /* design for a desktop (1200px - 1800px) goes here */
+	color: pink /* design for a DESKTOP size (1200px - 1800px) goes here */
 
-  ${mq(size.PHONE, `color: red`)}
-  ${mq(size.TAB_PORT, `color: green`)}
-  ${mq(size.TAB_LAND, `color: blue`)}
-  ${mq(size.DESKTOP_LARGE, `color: yellow`)}
+	${mqd(DeviceType.DESKTOP_LARGE, `color: yellow`)}
+	${mqd(DeviceType.TAB_LAND, `color: blue`)}
+	${mqd(DeviceType.TAB_PORT, `color: green`)}
+	${mqd(DeviceType.PHONE, `color: red`)}
+
 `;
 ```
 
@@ -27,20 +28,22 @@ Design for a phone (0px - 600px) first and then apply media queries for other sc
 
 ### ⚠️ ORDER OF MEDIA QUERIES MATTERS!
 
-DESKTOP_LARGE -> DESKTOP -> TAB_LAND -> TAB_PORT
+PHONE -> TAB_PORT -> TAB_LAND -> DESKTOP_LARGE
 
 ```css
 const myElement = styled.div`
-  color: pink /* design for a phone (0px - 600px) goes here */
+	color: pink /* design for a phone (0px - 600px) goes here */
 
-  ${mq(size.DESKTOP_LARGE, `color: yellow`)}
-  ${mq(size.DESKTOP, `color: red`)}
-  ${mq(size.TAB_LAND, `color: blue`)}
-  ${mq(size.TAB_PORT, `color: green`)}
+	${mqm(size.TAB_PORT, `color: green`)}
+	${mqm(size.TAB_LAND, `color: blue`)}
+	${mqm(size.DESKTOP, `color: red`)}
+	${mqm(size.DESKTOP_LARGE, `color: yellow`)}
+
 `;
 ```
 
 # Screen sizes
+
 ```
 PHONE [0 - 600px]
 TAB_PORT [600 - 900px]
