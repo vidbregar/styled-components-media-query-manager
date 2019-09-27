@@ -2,6 +2,12 @@
 
 Media query manager for styled-components
 
+# Install
+
+```
+npm i styled-components-media-query-manager
+```
+
 # Desktop first design
 
 Design for a desktop (1200px - 1800px) first and then apply media queries for other screen sizes.
