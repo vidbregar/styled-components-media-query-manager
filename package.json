@@ -1,6 +1,6 @@
 {
 	"name": "styled-components-media-query-manager",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"description": "Media query manager for styled-components",
 	"main": "dist/index.js",
 	"module": "dist/styled-components-media-query-manager.esm.js",
